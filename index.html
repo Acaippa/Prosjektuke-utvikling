@@ -43,16 +43,10 @@
         </calculator-wrapper>
 
         <article class="col-6">
-            {% for section in sections %}
-                <section>
-                    <!-- Om en tittel for seksjonen ikke er definert, så vil tittelen være lagret som None. Om den er det, så viser vi ikke tittelen. -->
-                    {% if section.title != None %}
-                        <h1>{{section.title}}</h1>
-                    {% endif %}
-
-                    <p>{{section.content|safe}}</p>
-                </section>
-            {% endfor %}
+            <section>
+                <h1>Dataindustriens miljøavtrykk og tiltak for å sikre bærekraftige valg i IT-løsninger</h1>
+                <p>MIPS målingen blir brukt til å måle alle ressurser som er brukt under produksjonen, bruken og resirkulasjonen av ett produkt. Ofte så er dataurstyr svært MIPS kostbare, ettersom de integrerte kretskortene krever spesielle metaller som er vanskelige å utvinne. <a href="https://www.lmd.no/2021/10/miljofiendtlig-digitalt-skifte/">Kilde</a></p>
+            </section>               
         </article>
         </main>
         <script type="text/javascript" src="{% static 'utslippCalcScript.js' %}"></script>
